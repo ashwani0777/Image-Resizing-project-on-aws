@@ -1,0 +1,14 @@
+# Optional: store Terraform state in S3 instead of a local file.
+# 1. Create a private, versioned S3 bucket by hand (or in a separate stack).
+# 2. Rename this file to backend.tf and fill in the values.
+# 3. Run `terraform init -migrate-state`.
+#
+# terraform {
+#   backend "s3" {
+#     bucket       = "YOUR-TFSTATE-BUCKET"
+#     key          = "image-resizer/terraform.tfstate"
+#     region       = "us-east-1"
+#     encrypt      = true
+#     use_lockfile = true # needs Terraform >= 1.10
+#   }
+# }

@@ -1,0 +1,4 @@
+pytest>=8
+moto[s3,sns]>=5
+boto3
+pillow

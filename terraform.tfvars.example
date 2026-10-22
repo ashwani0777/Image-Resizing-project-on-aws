@@ -1,0 +1,10 @@
+# Copy to terraform.tfvars and edit. terraform.tfvars is git-ignored.
+# NEVER put AWS access keys in here — use `aws configure` or AWS_PROFILE.
+
+notification_email = "you@example.com"
+aws_region         = "us-east-1"
+
+# Optional overrides
+# project_name = "image-resizer"
+# max_width    = 300
+# max_height   = 300
